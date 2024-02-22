@@ -1,0 +1,23 @@
+.Toastify__toast-container {
+	min-height: 1rem !important;
+	padding-bottom: 2rem !important;
+	padding-top: 1rem !important;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	max-height: 6rem !important;
+}
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+	color: #000 !important;
+	background: #fbcf00 !important;
+	border: none !important;
+	border-radius: 1rem !important;
+}
+.Toastify__toast-body > div:last-child {
+	text-align: center !important;
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+	color: #fff !important;
+	background: #ff0000 !important;
+	border: none !important;
+	border-radius: 1rem !important;
+}

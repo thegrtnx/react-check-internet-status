@@ -1,6 +1,6 @@
 {
 	"name": "react-check-internet-status",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "check if device is connected to the internet or disconnected",
 	"main": "dist/index.js",
 	"scripts": {
