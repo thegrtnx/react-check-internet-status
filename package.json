@@ -1,6 +1,6 @@
 {
 	"name": "react-check-internet-status",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "check if device is connected to the internet or disconnected",
 	"main": "dist/index.js",
 	"scripts": {
@@ -8,10 +8,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/thegrtnx/internet-status"
+		"url": "git+https://github.com/thegrtnx/react-check-internet-status"
 	},
 	"bugs": {
-		"url": "https://github.com/thegrtnx/internet-status/issues"
+		"url": "https://github.com/thegrtnx/react-check-internet-status/issues"
 	},
 	"keywords": [
 		"internet",

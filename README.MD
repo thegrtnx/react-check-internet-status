@@ -2,6 +2,8 @@
 
 This is a [react-typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx), helping you check if a device is connected to the internet or disconnected
 
+![stacked](https://raw.githubusercontent.com/thegrtnx/react-check-internet-status/master/vid/kora.gif)
+
 ## 🔧 Installation
 
 ```bash
