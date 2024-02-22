@@ -1,11 +1,11 @@
-# ✨ INTERNET-STATUS
+# ✨ react-check-internet-status
 
 This is a [react-typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx), helping you check if a device is connected to the internet or disconnected
 
 ## 🔧 Installation
 
 ```bash
-npm i internet-status
+npm i react-check-internet-status
 
 ```
 
@@ -26,7 +26,7 @@ I'll provide support for other packages with time. Happy to collaborate with any
 
 ```jsx
 import React from "react";
-import { InternetStatus } from "internet-status";
+import { InternetStatus } from "react-check-react-check-internet-status";
 
 const App: React.FC = () => {
 	return (
@@ -44,7 +44,7 @@ export default App;
 
 ```tsx
 import React from "react";
-import { InternetStatus } from "internet-status";
+import { InternetStatus } from "react-check-internet-status";
 
 const App: React.FC = () => {
 	return (
