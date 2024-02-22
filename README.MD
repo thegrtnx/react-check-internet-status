@@ -1,13 +1,11 @@
-# ✨ SWIPE-ANIMATE
+# ✨ INTERNET-STATUS
 
-This is a [typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx) and [`VickyJay`](https://github.com/Victorola-coder), helping you animate text in a swipe up animation just like the one below;
-
-![stacked](https://raw.githubusercontent.com/thegrtnx/swipe-animate/master/vid/kora.gif)
+This is a [react-typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx), helping you check if a device is connected to the internet or disconnected
 
 ## 🔧 Installation
 
 ```bash
-npm i swipe-animate
+npm i internet-status
 
 ```
 
@@ -15,6 +13,7 @@ I'll provide support for other packages with time. Happy to collaborate with any
 
 ## 😍 Features
 
+- Customize position of the notification based on [react-toastify](https://fkhadra.github.io/react-toastify/introduction) positioning
 - Easy to set up for real, you can make it work in less than 10sec!
 - Super easy to customize
 - Set custom duration with choice
@@ -27,56 +26,47 @@ I'll provide support for other packages with time. Happy to collaborate with any
 
 ```jsx
 import React from "react";
-import { Swipe } from "swipe-animate";
+import { InternetStatus } from "internet-status";
 
-const page = () => {
-	const arrayOfWords: string[] = ["Awesome!", "Genius!", "Intelligent!", "Prodigy!", "Him!", "Amazing!", "Terrific!", "Broke!"];
-
+const App: React.FC = () => {
 	return (
 		<div>
-			{" "}
-			<Swipe
-				words={arrayOfWords}
-				intervalDuration={4000}
-				textSize="lg:text-5xl text-3xl"
-				textColors={["green-400", "blue-500", "red-600"]}
-			/>
+			<h1>Your App</h1>
+			<InternetStatus position="bottom-right" />
 		</div>
 	);
 };
 
-export default page;
+export default App;
 ```
 
 - TSX
 
 ```tsx
-"use client";
 import React from "react";
-import { Swipe } from "swipe-animate";
+import { InternetStatus } from "internet-status";
 
-const page = () => {
-	const arrayOfWords: string[] = ["Awesome!", "Genius!", "Intelligent!", "Prodigy!", "Him!", "Amazing!", "Terrific!", "Broke!"];
-
+const App: React.FC = () => {
 	return (
 		<div>
-			{" "}
-			<Swipe
-				words={arrayOfWords}
-				intervalDuration={4000}
-				textSize="lg:text-5xl text-3xl"
-				textColors={["green-400", "blue-500", "red-600"]}
-			/>
+			<h1>Your App</h1>
+			<InternetStatus position="bottom-right" />
 		</div>
 	);
 };
 
-export default page;
+export default App;
+```
+
+## ✨ Styling
+
+```js
+position = "top-left || top-right || top-center || bottom-left || bottom-right || bottom-center";
 ```
 
 ## 🚀 Demo
 
-https://korahq.com/#move-money || https://simple-text-animation-gold.vercel.app/
+coming soon!
 
 ## 🤝 Contribute
 
