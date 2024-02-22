@@ -5,12 +5,17 @@ import "./style.css";
 
 interface InternetCheckProps {
 	position: ToastPosition;
+	onlineMessage?: string;
+	offlineMessage?: string;
 }
 
-const InternetStatus: React.FC<InternetCheckProps> = ({ position }) => {
+const InternetStatus: React.FC<InternetCheckProps> = ({ position, onlineMessage, offlineMessage }) => {
 	const handleToast = useCallback(
-		(message: string, type: "warning" | "error") => {
+		(type: "warning" | "error", customMessage?: string) => {
 			toast.dismiss();
+
+			const defaultMessage = type === "warning" ? "Internet Restored 🚀" : "No/Bad Internet Connection 😭";
+			const message = customMessage || defaultMessage;
 
 			toast[type](message, {
 				position: position,
@@ -25,8 +30,8 @@ const InternetStatus: React.FC<InternetCheckProps> = ({ position }) => {
 		[position]
 	);
 
-	const InternetRestored = useCallback(() => handleToast("Internet Restored 🚀", "warning"), [handleToast]);
-	const NoInternetConnection = useCallback(() => handleToast("No/Bad Internet Connection 😭", "error"), [handleToast]);
+	const InternetRestored = useCallback(() => handleToast("warning", onlineMessage), [handleToast, onlineMessage]);
+	const NoInternetConnection = useCallback(() => handleToast("error", offlineMessage), [handleToast, offlineMessage]);
 
 	useEffect(() => {
 		const handleOnlineEvent = () => InternetRestored();

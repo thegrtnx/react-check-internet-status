@@ -34,7 +34,11 @@ const App: React.FC = () => {
 	return (
 		<div>
 			<h1>Your App</h1>
-			<InternetStatus position="bottom-right" />
+			<InternetStatus
+				position="bottom-right"
+				onlineMessage="Custom online message 🌐"
+				offlineMessage="Custom offline message ❌"
+			/>
 		</div>
 	);
 };
@@ -53,7 +57,11 @@ const App: React.FC = () => {
 	return (
 		<div>
 			<h1>Your App</h1>
-			<InternetStatus position="bottom-right" />
+			<InternetStatus
+				position="bottom-right"
+				onlineMessage="Custom online message 🌐"
+				offlineMessage="Custom offline message ❌"
+			/>
 		</div>
 	);
 };

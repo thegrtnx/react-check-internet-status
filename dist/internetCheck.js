@@ -28,9 +28,11 @@ var react_toastify_1 = require("react-toastify");
 require("react-toastify/dist/ReactToastify.css");
 require("./style.css");
 var InternetStatus = function (_a) {
-    var position = _a.position;
-    var handleToast = (0, react_1.useCallback)(function (message, type) {
+    var position = _a.position, onlineMessage = _a.onlineMessage, offlineMessage = _a.offlineMessage;
+    var handleToast = (0, react_1.useCallback)(function (type, customMessage) {
         react_toastify_1.toast.dismiss();
+        var defaultMessage = type === "warning" ? "Internet Restored 🚀" : "No/Bad Internet Connection 😭";
+        var message = customMessage || defaultMessage;
         react_toastify_1.toast[type](message, {
             position: position,
             autoClose: 3000,
@@ -41,8 +43,8 @@ var InternetStatus = function (_a) {
             theme: "colored",
         });
     }, [position]);
-    var InternetRestored = (0, react_1.useCallback)(function () { return handleToast("Internet Restored 🚀", "warning"); }, [handleToast]);
-    var NoInternetConnection = (0, react_1.useCallback)(function () { return handleToast("No/Bad Internet Connection 😭", "error"); }, [handleToast]);
+    var InternetRestored = (0, react_1.useCallback)(function () { return handleToast("warning", onlineMessage); }, [handleToast, onlineMessage]);
+    var NoInternetConnection = (0, react_1.useCallback)(function () { return handleToast("error", offlineMessage); }, [handleToast, offlineMessage]);
     (0, react_1.useEffect)(function () {
         var handleOnlineEvent = function () { return InternetRestored(); };
         var handleOfflineEvent = function () { return NoInternetConnection(); };
