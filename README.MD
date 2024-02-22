@@ -45,6 +45,7 @@ export default App;
 - TSX
 
 ```tsx
+"use client";
 import React from "react";
 import { InternetStatus } from "react-check-internet-status";
 
