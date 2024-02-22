@@ -1,0 +1,28 @@
+{
+	"name": "internet-status",
+	"version": "1.0.0",
+	"description": "check if device is connected to the internet or disconnected",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"internet",
+		"offline",
+		"online"
+	],
+	"author": "thegrtnx",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^18.2.57",
+		"@types/react-dom": "^18.2.19",
+		"typescript": "^5.3.3"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"dependencies": {
+		"react-toastify": "^10.0.4"
+	}
+}
