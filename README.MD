@@ -16,6 +16,7 @@ I'll provide support for other packages with time. Happy to collaborate with any
 ## 😍 Features
 
 - Customize position of the notification based on [react-toastify](https://fkhadra.github.io/react-toastify/introduction) positioning
+- Customize the online and offline messages based on choice
 - Easy to set up for real, you can make it work in less than 10sec!
 - Super easy to customize
 - Set custom duration with choice
