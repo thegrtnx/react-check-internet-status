@@ -26,7 +26,7 @@ I'll provide support for other packages with time. Happy to collaborate with any
 
 ```jsx
 import React from "react";
-import { InternetStatus } from "react-check-react-check-internet-status";
+import { InternetStatus } from "react-check-internet-status";
 
 const App: React.FC = () => {
 	return (
